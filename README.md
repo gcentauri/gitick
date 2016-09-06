@@ -66,7 +66,7 @@ following:
     git push origin master
 
 It also assumes that you have set up a git repo on a remote location
-called `origin` that has a `master` branch to which you have the
+called `origin` that has a `master` branch for which you have the
 permission to `pull` and `push`.
 
 
