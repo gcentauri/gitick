@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+TAG=$1
+
+grep -r ":tags .*$TAG" | grep md::

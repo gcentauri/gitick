@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+TITLE=$1
+PRIORITY=$2
+
+FILE="new/$(echo $TITLE | sed 's/ /-/g').md"
+
+echo :priority $2 >> $FILE
+echo :tags >> $FILE
+echo :date `date` >> $FILE
+echo '' >> $FILE
+echo "# $TITLE" >> $FILE
+echo '' >> $FILE
+echo "# LOG" >> $FILE
+
+
+
+

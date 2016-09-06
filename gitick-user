@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+USER=$1
+
+mkdir $USER
+cd $USER
+mkdir in-progress need-info test
+echo 'dummy' > in-progress/.dummy
+echo 'dummy' > need-info/.dummy
+echo 'dummy' > test/.dummy
+git add .
+git commit -m "adding user $USER"
