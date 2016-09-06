@@ -7,9 +7,9 @@ DISCLAIMER
 ----------
 
 This these commands are dangerous and are really no better than bash
-alias most of the time.  They perform absolutely no checking of any
-kind and if run in the wrong directory they may cause problems that
-you have not intended.
+aliases most of the time.  They perform absolutely no checking of any
+kind, and, if run from the wrong directory, they may have
+unintended and possible hazardous consequences.
 
 
 COMMANDS
