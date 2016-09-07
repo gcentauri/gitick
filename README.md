@@ -9,7 +9,7 @@ DISCLAIMER
 This these commands are dangerous and are really no better than bash
 aliases most of the time.  They perform absolutely no checking of any
 kind, and, if run from the wrong directory, they may have
-unintended and possible hazardous consequences.
+unintended and possibly hazardous consequences.
 
 
 COMMANDS
@@ -18,12 +18,18 @@ COMMANDS
 ### `gitick-new <project>`
 
 Creates a new directory called `gitick.<project>` and populates it
-with some some directories.
+with some some directories that are used by the other commands.
 
 ### `gitick-user <user>`
 
 From within a gitick directory, creates a new user directory called
 `<user>`.  This is where you put tickets assigned to a team member.
+
+Example
+    
+    cd gitick.cool-project
+    gitick-user colin
+    
 
 ### `gitick-add <short title> <number>`
 
@@ -53,6 +59,11 @@ grep.
 
 From a git top level directory, another wrapper around grep. Finds all
 tickets tagged with `<tag>`.
+
+
+Example
+  
+    gitick-tagged ui
 
 ### `gitick-sync`
 
