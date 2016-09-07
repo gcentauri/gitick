@@ -8,6 +8,7 @@ FILE="new/$(echo $TITLE | sed 's/ /-/g').md"
 echo :priority $2 >> $FILE
 echo :tags >> $FILE
 echo :date `date` >> $FILE
+echo :reported `git config user.name` >> $FILE
 echo '' >> $FILE
 echo "# $TITLE" >> $FILE
 echo '' >> $FILE
