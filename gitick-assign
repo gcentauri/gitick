@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+TICKET=$1
+USER=$2
+STATUS=$3
+
+git add $TICKET
+git commit -m "$TICKET"
+
+git mv $TICKET "$(cat .gitick)/$USER/$STATUS/"
+git commit -m "assigned $TICKET to $USER/$STATUS"
+
+
+

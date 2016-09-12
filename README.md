@@ -65,6 +65,12 @@ Example
   
     gitick-tagged ui
 
+### `gitick-assign <ticket> <user> <status>`
+
+Assign ticket to user with status.  For example:
+
+    gitick-assign ../../new/My-cool-ticket.md otherguy need-info
+
 ### `gitick-sync`
 
 Called from within a gitick directory tree. This is could be
