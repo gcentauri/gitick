@@ -5,6 +5,10 @@ PRIORITY=$2
 
 FILE="new/$(echo $TITLE | sed 's/ /-/g').md"
 
+DIR=`pwd`
+
+cd `cat .gitick`
+
 echo :priority $2 >> $FILE
 echo :tags >> $FILE
 echo :date `date` >> $FILE
@@ -14,6 +18,6 @@ echo "# $TITLE" >> $FILE
 echo '' >> $FILE
 echo "# LOG" >> $FILE
 
-
+cd $DIR
 
 

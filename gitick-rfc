@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-find . | grep need-info.*md$
+find `cat .gitick` | grep need-info.*md$
 

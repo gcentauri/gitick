@@ -4,9 +4,11 @@ PROJ=$1
 
 mkdir gitick.$PROJ
 cd gitick.$PROJ
+echo '.' > .gitick
 mkdir new
+echo '..' > new/.gitick
 mkdir new/need-info
-echo 'dummy' > new/need-info/.dummy
+echo '../..' > new/need-info/.gitick
 git init .
 git add .
 git commit -m "initial commit for $PROJ"

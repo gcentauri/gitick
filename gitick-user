@@ -2,11 +2,18 @@
 
 USER=$1
 
+DIR=`pwd`
+
+cd `cat .gitick`
+
 mkdir $USER
+echo '..' > $USER/.gitick
 cd $USER
 mkdir in-progress need-info test
-echo 'dummy' > in-progress/.dummy
-echo 'dummy' > need-info/.dummy
-echo 'dummy' > test/.dummy
+echo '../..' > in-progress/.gitick
+echo '../..' > need-info/.gitick
+echo '../..' > test/.gitick
 git add .
 git commit -m "adding user $USER"
+
+cd $DIR

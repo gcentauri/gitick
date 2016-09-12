@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-find . | grep in-progress.*md$
+find `cat .gitick` | grep in-progress.*md$
 
