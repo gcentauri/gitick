@@ -22,7 +22,7 @@ with some some directories that are used by the other commands.
 
 ### `gitick-user <user>`
 
-From within a gitick directory, creates a new user directory called
+From within a gitick tree, creates a new user directory called
 `<user>`.  This is where you put tickets assigned to a team member.
 
 Example
@@ -33,7 +33,7 @@ Example
 
 ### `gitick-add <short title> <number>`
 
-Called from within a gitick toplevel directory, this is how you add
+Called from within a gitick directory tree, this is how you add
 new tickets.
 
 E.g.
@@ -46,18 +46,18 @@ You can edit it as you like, some text is filled in already.
 
 ### `gitick-wip`
 
-From a gitick top level directory, lists all work in progress. Just a
+From a gitick directory tree, lists all work in progress. Just a
 wrapper around grep.
 
 ### `gitick-rfc`
 
-From a gitick top level directory, lists all tickets for which
+From a gitick directory tree, lists all tickets for which
 information is needed from some team-member.  Again, a wrapper around
 grep.
 
 ### `gitick-tagged <tag>`
 
-From a git top level directory, another wrapper around grep. Finds all
+From a gitick directory tree, another wrapper around grep. Finds all
 tickets tagged with `<tag>`.
 
 
@@ -67,7 +67,7 @@ Example
 
 ### `gitick-sync`
 
-Called from within a gitick top level directory. This is could be
+Called from within a gitick directory tree. This is could be
 dangerous if called from the wrong place as it just does the
 following:
 
