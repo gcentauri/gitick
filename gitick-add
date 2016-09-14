@@ -2,6 +2,7 @@
 
 TITLE=$1
 PRIORITY=$2
+INITTAG=$3
 
 FILE="new/$(echo $TITLE | sed 's/ /-/g').md"
 
@@ -9,10 +10,10 @@ DIR=`pwd`
 
 cd `cat .gitick`
 
-echo :priority $2 >> $FILE
-echo :tags >> $FILE
-echo :date `date` >> $FILE
-echo :reported `git config user.name` >> $FILE
+echo priority: $PRIORITY >> $FILE
+echo tags: [$INITTAG] >> $FILE
+echo date: `date` >> $FILE
+echo reported: `git config user.name` >> $FILE
 echo '' >> $FILE
 echo "# $TITLE" >> $FILE
 echo '' >> $FILE

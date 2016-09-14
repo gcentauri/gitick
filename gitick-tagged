@@ -2,4 +2,4 @@
 
 TAG=$1
 
-grep -r ":tags .*$TAG" `cat .gitick` | grep md::
+grep -r "tags: .*$TAG" `cat .gitick` | grep md:
