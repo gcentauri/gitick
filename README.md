@@ -31,7 +31,7 @@ Example
     gitick-user colin
     
 
-### `gitick-add <short title> <number>`
+### `gitick-add <short title> <number> [tag]`
 
 Called from within a gitick directory tree, this is how you add
 new tickets.
@@ -42,6 +42,11 @@ E.g.
 	
 This creates a file called `new/My-New-Issue.md` with priority 5.
 
+Optionally, the command also accepts tags:
+
+    gitick-add 'Some Other Issue' 9 'important, ui, hellish bug'
+
+
 You can edit it as you like, some text is filled in already.
 
 ### `gitick-wip`
@@ -49,11 +54,17 @@ You can edit it as you like, some text is filled in already.
 From a gitick directory tree, lists all work in progress. Just a
 wrapper around grep.
 
+    gitick-wip colin  #just colin's work-in-progress
+	gitick-wip        #everybody's
+
 ### `gitick-rfc`
 
 From a gitick directory tree, lists all tickets for which
 information is needed from some team-member.  Again, a wrapper around
 grep.
+
+    gitick-rfc colin   #just what colin needs to comment on
+	gitick-rfc         #tickets in need of info
 
 ### `gitick-tagged <tag>`
 
