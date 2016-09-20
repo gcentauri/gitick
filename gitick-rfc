@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 
-find `cat .gitick` | grep need-info.*md$
+echo "NEEDS INFO"
+echo ""
+
+find `cat .gitick` | grep $1/need-info.*md$ | grep -v test | sed 's/\// /g' | awk '{print $(NF - 2) ": " $NF}'
 

@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 
-find `cat .gitick` | grep in-progress.*md$
+echo "WORK IN PROGRESS"
+echo ""
+
+find `cat .gitick` | grep $1/in-progress.*md$ | sed 's/\// /g' | awk '{print $(NF - 2) ": " $NF}'
 
