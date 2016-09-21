@@ -19,6 +19,13 @@ echo "# $TITLE" >> $FILE
 echo '' >> $FILE
 echo "# LOG" >> $FILE
 
+if [ -n "$4" ]; then
+    echo "Don't Forget To Fill In Your Ticket!"
+    echo ""
+else
+    nano $FILE
+fi
+
 cd $DIR
 
 

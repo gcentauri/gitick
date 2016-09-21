@@ -31,16 +31,18 @@ Example
     gitick-user colin
     
 
-### `gitick-add <short title> <number> [tag]`
+### `gitick-add <short title> <number> [tag] ['nope']`
 
 Called from within a gitick directory tree, this is how you add
-new tickets.
+new tickets.  
 
 E.g.
 
     gitick-add 'My New Issue' 5
 	
-This creates a file called `new/My-New-Issue.md` with priority 5.
+At this point an editor will open in the shell so you can fill the
+ticket in a little. Once you close the ditory there will be a new file
+called `new/My-New-Issue.md` with priority 5.
 
 Optionally, the command also accepts tags:
 
@@ -48,6 +50,14 @@ Optionally, the command also accepts tags:
 
 
 You can edit it as you like, some text is filled in already.
+
+Moreover, if you wish to suppress the editor, you have to pass
+anything at all (I use `nope`) as the final argument to `gitick-add`:
+
+    gitick-add `One More Time` 4 bug nope
+	
+At which point "Don't Forget To Fill In Your Ticket!" prints to the
+screen.
 
 ### `gitick-wip`
 
