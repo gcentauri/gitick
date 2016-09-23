@@ -17,7 +17,7 @@ COMMANDS
 
 ### `gitick-new <project>`
 
-Creates a new directory called `gitick.<project>` and populates it
+Creates a new directory called `<project>.gitick` and populates it
 with some some directories that are used by the other commands.
 
 ### `gitick-user <user>`

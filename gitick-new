@@ -2,8 +2,8 @@
 
 PROJ=$1
 
-mkdir gitick.$PROJ
-cd gitick.$PROJ
+mkdir $PROJ.gitick
+cd $PROJ.gitick
 echo '.' > .gitick
 mkdir new
 echo '..' > new/.gitick
