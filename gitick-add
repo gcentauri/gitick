@@ -16,6 +16,8 @@ echo tags: [$INITTAG] >> $FILE
 echo date: `date` >> $FILE
 echo reported: `git config user.name` >> $FILE
 echo '' >> $FILE
+echo '## summary:' >> $FILE
+echo '' >> $FILE
 echo "# LOG" >> $FILE
 
 if [ -n "$4" ]; then
