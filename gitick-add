@@ -10,12 +10,11 @@ DIR=`pwd`
 
 cd `cat .gitick`
 
+echo "# $TITLE" >> $FILE
 echo priority: $PRIORITY >> $FILE
 echo tags: [$INITTAG] >> $FILE
 echo date: `date` >> $FILE
 echo reported: `git config user.name` >> $FILE
-echo '' >> $FILE
-echo "# $TITLE" >> $FILE
 echo '' >> $FILE
 echo "# LOG" >> $FILE
 
